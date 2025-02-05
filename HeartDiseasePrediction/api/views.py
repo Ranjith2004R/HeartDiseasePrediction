@@ -8,7 +8,7 @@ import numpy as np
 from sklearn.tree import DecisionTreeClassifier
 
 # Load and train model
-df = pd.read_csv('E:\MLOPS\HeartDiseasePrediction\heart_data.csv')  # Replace with actual path
+df = pd.read_csv('E:\Heart_Disease_Prediction_model\HeartDiseasePrediction\heart_data.csv')  # Replace with actual path
 X = df.iloc[:, :-1]
 y = df.iloc[:, -1]
 
