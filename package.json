@@ -1,0 +1,13 @@
+{
+  "name": "mlops-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "frontend": "cd frontend && npm start",
+    "backend": "cd HeartDiseasePrediction && python manage.py makemigrations && python manage.py migrate && python manage.py runserver",
+    "start": "concurrently \"npm run frontend\" \"npm run backend\""
+  },
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
